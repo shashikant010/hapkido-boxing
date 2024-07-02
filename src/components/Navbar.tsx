@@ -15,10 +15,20 @@ const Navbar = () => {
       </div>
       <Image src={logo} alt='logo' height={100} className='mr-20'/>
     </div>
-    <div className='h-12 w-full bg-teal-100'>
+    <div className='h-12 w-full bg-teal-100 flex justify-center items-center'>
 
-      <ul>
-        <li>home</li>
+      <ul className='flex gap-5 text-xl text-gray-400'>
+        <li className='active'>Home</li>
+        <li>About</li>
+        <li>Member</li>
+        <li>Commission</li>
+        <li>History</li>
+        <li>News</li>
+        <li>Events</li>
+        <li>Refree list</li>
+        <li>Result</li>
+        <li>Rules</li>
+        <li>Gallery</li>
       </ul>
 
     </div>

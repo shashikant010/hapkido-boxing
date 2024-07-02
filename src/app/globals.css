@@ -2,4 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
+li{
+    cursor: pointer;
+}
+.active{
+    color: black;
+}
