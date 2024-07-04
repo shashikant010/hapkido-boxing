@@ -4,10 +4,15 @@ import HeroSection from "@/components/HeroSection";
 import Image from "next/image";
 import {Carousel} from "../components/Carousel"
 import {slides} from "../data/crouseldata.json"
+import LatestEvent from "../components/LatestEvent"
+import Contact from "../components/Contact"
+
 export default function Home() {
   return (
-    <span className="flex justify-center items-center p-10">
+    <span className="flex flex-col gap-5 justify-center items-center ">
       <Carousel data={slides}/>
+      <LatestEvent/>
+      <Contact/>
     </span>
   );
 }

@@ -23,7 +23,7 @@ export const Carousel = ({ data }) => {
  if(autoplay){ useEffect(()=>{
     const changingId= setInterval(()=>{
       nextSlide()
-    },2000)
+    },4000)
 
     return ()=>clearInterval(changingId);
     })}
