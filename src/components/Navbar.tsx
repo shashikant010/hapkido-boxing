@@ -17,7 +17,7 @@ const Navbar = () => {
     </div>
     <div className='h-12 w-full bg-teal-100 flex justify-center items-center'>
 
-      <ul className='flex gap-5 text-xl text-gray-400'>
+      <ul className='flex gap-5 text-xl text-gray-400 '>
         <li className='active'>Home</li>
         <li>About</li>
         <li>Member</li>

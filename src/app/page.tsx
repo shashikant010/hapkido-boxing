@@ -10,7 +10,7 @@ import Contact from "../components/Contact"
 export default function Home() {
   return (
     <span className="flex flex-col gap-5 justify-center items-center ">
-      <Carousel data={slides}/>
+      <div className="p-3"><Carousel data={slides}/></div>
       <LatestEvent/>
       <Contact/>
     </span>
