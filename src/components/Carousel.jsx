@@ -2,32 +2,7 @@ import Image from "next/image";
 import React, { useCallback, useEffect, useLayoutEffect, useReducer, useState, useTransition } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
-const slides =[
-  {
-    "src": "https://picsum.photos/seed/img1/600/400",
-    "alt": "Image 1 for carousel"
-  },
-  {
-    "src": "https://picsum.photos/seed/img2/600/400",
-    "alt": "Image 2 for carousel"
-  },
-  {
-    "src": "https://picsum.photos/seed/img3/600/400",
-    "alt": "Image 3 for carousel"
-  },
-  // {
-  //   "src": "https://picsum.photos/seed/img1/600/400",
-  //   "alt": "Image 1 for carousel"
-  // },
-  // {
-  //   "src": "https://picsum.photos/seed/img2/600/400",
-  //   "alt": "Image 2 for carousel"
-  // },  
-  // {
-  //   "src": "https://picsum.photos/seed/img3/600/400",
-  //   "alt": "Image 3 for carousel"
-  // }
-]
+
 
 
 export const Carousel = ({ data }) => {
