@@ -20,10 +20,10 @@ function Footer() {
             <h3>Contact us :</h3>
             <ul id="contact">
                 <li>
-                    Phone : +91-7972788349
+                    Phone : +91-9050051475
                 </li>  
                 <li>
-                    Gmail : rajwagadkar3@gmail.com
+                    Gmail : Naveendahiya1995@gmail.com
                 </li>
                 <div className='social-links'>
                     <ul>
