@@ -63,6 +63,8 @@ export const Carousel = ({ data }) => {
           @media screen and (max-width: 701px) {
         .carousel{
             width: 300px;
+            height:300px;
+            margin-top:20px
             }
         .slide{
           left:-${slide*300}px;
