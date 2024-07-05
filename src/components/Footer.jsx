@@ -6,7 +6,7 @@ import Image from 'next/image'
 function Footer() {
   return (
     <footer>
-    <div className="footer-wrapper">
+    <div className="footer-wrapper p-3 md:text-base text-xs">
         <section className="footer-top">
             <div className="footer-headline">
                 <h2 className='font-bold text-2xl'>Hapkido National Boxing Federation-India</h2>

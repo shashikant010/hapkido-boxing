@@ -1,5 +1,33 @@
+import Image from "next/image";
 import React, { useCallback, useEffect, useLayoutEffect, useReducer, useState, useTransition } from "react";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
+
+const slides =[
+  {
+    "src": "https://picsum.photos/seed/img1/600/400",
+    "alt": "Image 1 for carousel"
+  },
+  {
+    "src": "https://picsum.photos/seed/img2/600/400",
+    "alt": "Image 2 for carousel"
+  },
+  {
+    "src": "https://picsum.photos/seed/img3/600/400",
+    "alt": "Image 3 for carousel"
+  },
+  // {
+  //   "src": "https://picsum.photos/seed/img1/600/400",
+  //   "alt": "Image 1 for carousel"
+  // },
+  // {
+  //   "src": "https://picsum.photos/seed/img2/600/400",
+  //   "alt": "Image 2 for carousel"
+  // },  
+  // {
+  //   "src": "https://picsum.photos/seed/img3/600/400",
+  //   "alt": "Image 3 for carousel"
+  // }
+]
 
 
 export const Carousel = ({ data }) => {
@@ -20,7 +48,7 @@ export const Carousel = ({ data }) => {
 
 
 
- if(autoplay){ useEffect(()=>{
+ if(autoplay=="true"){ useEffect(()=>{
     const changingId= setInterval(()=>{
       nextSlide()
     },4000)
@@ -39,6 +67,7 @@ export const Carousel = ({ data }) => {
             display: flex;
             justify-content: start;
             align-items: center;
+            
             width: 600px;
             height: 400px;
             overflow:hidden;
@@ -49,13 +78,24 @@ export const Carousel = ({ data }) => {
           .slide {
             border-radius: 0.5rem;
             box-shadow: 0px 0px 7px #666;
-            width: 100%;
-            height: 100%;
+           height:100%;
+  
             position:relative;
             transition: all linear 1s;
             left:-${slide*600}px;
           }
+
+          @media screen and (max-width: 701px) {
+        .carousel{
+            width: 300px;
+            }
+        .slide{
+          left:-${slide*300}px;
+          }
+        }
         
+         
+
           .slide-hidden {
             display: none;
           }
@@ -112,11 +152,14 @@ export const Carousel = ({ data }) => {
       {data.map((item, idx) => {
         return (
           
-          <img
+          <Image
             src={item.src}
             alt={item.alt}
             key={idx}
             className={"slide"}
+            width={600}
+            height={400}
+
           />
         );
       })}

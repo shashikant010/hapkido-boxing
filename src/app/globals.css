@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 li{
@@ -234,3 +235,19 @@ footer {
   .ctext {
     margin: 0 1.5em
   }
+
+
+  .slick-slide > div {
+    margin: 0 10px;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color:orange !important;
+  }     
+
+  img{
+    width: 100%;
+    
+  }
+
+ 
