@@ -13,29 +13,38 @@ export default function Home() {
  
   const slides =[
     {
-      "src": "https://picsum.photos/seed/img1/600/400",
+      "src": "/images/image1.jpg",
       "alt": "Image 1 for carousel"
     },
     {
-      "src": "https://picsum.photos/seed/img2/600/400",
+      "src": "/images/image2.jpg",
       "alt": "Image 2 for carousel"
     },
     {
-      "src": "https://picsum.photos/seed/img3/600/400",
+      "src": "/images/image3.jpg",
       "alt": "Image 3 for carousel"
     },
-    // {
-    //   "src": "https://picsum.photos/seed/img1/600/400",
-    //   "alt": "Image 1 for carousel"
-    // },
-    // {
-    //   "src": "https://picsum.photos/seed/img2/600/400",
-    //   "alt": "Image 2 for carousel"
-    // },  
-    // {
-    //   "src": "https://picsum.photos/seed/img3/600/400",
-    //   "alt": "Image 3 for carousel"
-    // }
+    {
+      "src": "/images/image4.jpg",
+      "alt": "Image 3 for carousel"
+    },
+    {
+      "src": "/images/image5.jpg",
+      "alt": "Image 3 for carousel"
+    },
+    {
+      "src": "/images/image6.jpg",
+      "alt": "Image 3 for carousel"
+    },
+    {
+      "src": "/images/image7.jpg",
+      "alt": "Image 3 for carousel"
+    },
+    {
+      "src": "/images/image8.jpg",
+      "alt": "Image 3 for carousel"
+    },
+    
   ]
   return (
     <span className="flex flex-col gap-5 justify-center items-center ">

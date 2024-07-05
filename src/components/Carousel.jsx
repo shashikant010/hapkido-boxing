@@ -54,7 +54,7 @@ export const Carousel = ({ data }) => {
             border-radius: 0.5rem;
             box-shadow: 0px 0px 7px #666;
            height:100%;
-  
+            width:600px;
             position:relative;
             transition: all linear 1s;
             left:-${slide*600}px;
