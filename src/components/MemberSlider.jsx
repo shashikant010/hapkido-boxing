@@ -1,6 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Image from "next/image";
 
 function MemberSlider() {
   const settings = {
@@ -18,7 +19,7 @@ function MemberSlider() {
         {data.map((d) => (
           <div key={d.name} className="bg-white h-[300px] w-full text-black rounded-xl">
             <div className='h-56 bg-indigo-500 w-full flex justify-center items-center rounded-t-xl'>
-              <img src={d.img} alt="" className="h-44 w-44 rounded-full"/>
+              <Image src={d.img} alt="" height={1000} width={1000} className="h-44 w-44 rounded-full"/>
             </div>
 
             <div className="flex flex-col items-center justify-center gap-4 p-4">
