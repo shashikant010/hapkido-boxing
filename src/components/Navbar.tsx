@@ -57,9 +57,9 @@ const Navbar = () => {
 
     <div className='h-12 w-full  md:flex justify-center items-center hidden'>
 
-      <ul className='md:flex gap-5 text-xl text-gray-400'>
+      <ul className='md:flex gap-5 text-xl '>
         <Link href="/">
-          <li className='active'>Home</li>
+          <li>Home</li>
         </Link>
         <Link href="/about"><li>About</li></Link>
         <Link href="/member"><li>Member</li></Link>
