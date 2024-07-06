@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import { useEffect } from 'react'
 
-function page() {
+function Page() {
   useEffect(() => {
     document.title = "History|Hapkido";
   }, []);
@@ -70,4 +70,4 @@ comprehend rules and public appeal. </p></div>
   )
 }
 
-export default page
+export default Page

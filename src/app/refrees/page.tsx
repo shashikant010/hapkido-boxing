@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import React from 'react'
 
-function page() {
+function Page() {
   useEffect(() => {
     document.title = "refrees | Hapkido";
   }, []);
@@ -22,4 +22,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

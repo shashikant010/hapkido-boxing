@@ -6,7 +6,7 @@ import { useEffect } from 'react'
 
 
 
-function page() {
+function Page() {
   useEffect(() => {
     document.title = "About Us | Hapkido ";
   }, []);
@@ -66,4 +66,4 @@ ring .
   )
 }
 
-export default page
+export default Page

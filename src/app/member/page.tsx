@@ -6,7 +6,7 @@ import Image from 'next/image'
 import React from 'react'
 
 
-function page() {
+function Page() {
   useEffect(() => {
     document.title = "members | Hapkido";
   }, []);
@@ -32,4 +32,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-function page() {
+function Page() {
   useEffect(() => {
     document.title = "rules | Hapkido";
   }, []);
@@ -28,4 +28,4 @@ function page() {
   )
 }
 
-export default page
+export default Page

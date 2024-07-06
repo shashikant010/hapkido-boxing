@@ -13,7 +13,7 @@ import {ThemeProvider as NextThemesProvider} from "next-themes";
 import { useState } from "react";
 import {useTheme} from "next-themes";
 import { useEffect } from "react";
-
+import Head from "next/head";
 export default function Home() {
   useEffect(() => {
     document.title = "Home | Hapkido";
@@ -59,7 +59,9 @@ export default function Home() {
 
   return (
    <>
-   
+    <Head>
+      <link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+      </Head>
     <span className="flex flex-col gap-5 justify-center items-center ">
     
       <Carousel data={slides} />

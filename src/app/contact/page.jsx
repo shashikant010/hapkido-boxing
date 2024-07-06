@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React, { useState } from 'react'
 import { Textarea } from '@nextui-org/react';
 
-function page() {
+function Page() {
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
     const [message,setMessage]=useState("")
@@ -64,4 +64,4 @@ function page() {
   )
 }
 
-export default page
+export default Page
