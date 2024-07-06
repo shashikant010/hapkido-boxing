@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "../components/Footer"
 import {NextUIProvider} from '@nextui-org/react'
 import {ThemeProvider as NextThemesProvider} from "next-themes";
-import { useTheme } from "next-themes";
+import { useTheme ,} from "next-themes";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,7 +25,7 @@ export default function RootLayout({
       
       <body className={inter.className}>
       <NextUIProvider>
-      <NextThemesProvider attribute="class" defaultTheme="dark">
+      <NextThemesProvider attribute="class" defaultTheme="light">
         <Navbar/>
         {children}
       <Footer/>

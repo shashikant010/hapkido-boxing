@@ -3,12 +3,12 @@ import { useTheme } from 'next-themes'
 function ThemeToggle() {
     const {systemTheme} = useTheme()
     const {theme,setTheme}= useTheme()
-    const [darkMode,setDarkMode]=useState(false)
-    useEffect(()=>{
-      if(systemTheme==="dark"){
-        setDarkMode(true)
-      }
-    },[])
+    const [darkMode,setDarkMode]=useState(theme==="dark"?true:false)
+    // useEffect(()=>{
+    //   if(systemTheme==="dark"){
+    //     setDarkMode(true)
+    //   }
+    // },[])
     useEffect(()=>{
         if(darkMode){
             setTheme("dark")
