@@ -1,8 +1,13 @@
+"use client"
+import { useEffect } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
 function page() {
+  useEffect(() => {
+    document.title = "rules | Hapkido";
+  }, []);
   return (
     <div className='flex justify-center items-center flex-col'>
         <h1 className='p-6 rounded-full bg-blue-900 text-white md:text-3xl text-xl text-center font-bold w-1/2 m-2'>Rules</h1>

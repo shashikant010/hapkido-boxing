@@ -1,7 +1,12 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
+import { useEffect } from 'react'
 
 function page() {
+  useEffect(() => {
+    document.title = "History|Hapkido";
+  }, []);
   return (
     <div className='flex justify-center items-center flex-col'>
         <h1 className='p-6 rounded-full bg-blue-900 text-white md:text-3xl text-xl text-center font-bold w-1/2 m-2'>History</h1>

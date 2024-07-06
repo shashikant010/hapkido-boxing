@@ -12,8 +12,12 @@ import {NextUIProvider} from '@nextui-org/react'
 import {ThemeProvider as NextThemesProvider} from "next-themes";
 import { useState } from "react";
 import {useTheme} from "next-themes";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Home | Hapkido";
+  }, []);
  
   const slides =[
     {
@@ -54,14 +58,17 @@ export default function Home() {
  
 
   return (
+   <>
    
     <span className="flex flex-col gap-5 justify-center items-center ">
+    
       <Carousel data={slides} />
       <LatestEvent/>
       <Contact />
       <NewsAndResults/>
       <MemberSlider/>
     </span>
+    </>
 
   );
 }

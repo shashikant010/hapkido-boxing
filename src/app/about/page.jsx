@@ -1,8 +1,18 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
+import { useEffect } from 'react'
+
+
 
 function page() {
+  useEffect(() => {
+    document.title = "About Us | Hapkido ";
+  }, []);
   return (
+    <>
+    
     <div className='flex justify-center items-center flex-col '>
       <h1 className='md:text-3xl  font-bold bg-orange-300 p-3 rounded-full font-serif m-2 text-black'>ABOUT HAPKIDO</h1>
       <div className='self-start'>
@@ -52,6 +62,7 @@ function page() {
 ring .
               </p>
     </div>
+    </>
   )
 }
 

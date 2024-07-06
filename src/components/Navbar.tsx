@@ -71,6 +71,7 @@ const Navbar = () => {
         <Link href="/result"><li>Result</li></Link>
         <Link href="/rules"><li>Rules</li></Link>
         <Link href="/gallery"><li>Gallery</li></Link>
+        <Link href="/contact"><li>Contact</li></Link>
         <li><ThemeToggle/></li>
       </ul>
 
