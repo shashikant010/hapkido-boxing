@@ -19,7 +19,7 @@ At this tirne, urany great warriors, in accordance with ancient traditions, unde
 annual pilgrimages throughout Japan to improve their martial arts skills. During their
 travels they visited local temples to offer prayers and donations. One such warrior,
 Master Sokaku Takeda, paid regular visits to the monastery where Yong Sool Choi
-resided. During one of Master Takeda's visits, the resident monks, seeing an opportunity,
+resided. During one of Master Takeda visits, the resident monks, seeing an opportunity,
 beseeched Master Takeda to take the young Choi as a disciple.
 <br /><br />
 
@@ -27,20 +27,20 @@ Master Takeda practiced the art of swordsmanship and a weaponless martial art kn
 as Daito-Ryu Aiki Jujitsu. This art emphasized the use of joint locks, strikes, and nerve
 attacks to neutralize an opponent. Daito-Ryu Aiki Jujitsu, itself, originated from the
 united Silla Dynasty of Korea. Sam Lang, Won Eui Guang, a Korean bureaucratic
-official, taught this art to Japan's Minarnoto Shogunate, the ruling family of Japan
+official, taught this art to Japan Minarnoto Shogunate, the ruling family of Japan
 during the Karnakura feudal era in the mid 900%. The Shogunate, in return, passed the
 art to members of the Takeda Clan where it remained for over 33 generations. Master
 Sokaku Takeda was a 37th generation practitioner.
 <br /><br />
 
 
-The young Choi served as Master Takeda's personal rnanservant and, in that capacity,
+The young Choi served as Master Takeda personal rnanservant and, in that capacity,
 was privy to the lessons Takeda provided to all levels of students of his style of unarmed
 combat; including the most senior students of Daito- Ryu Aiki Jujitsu.
 <br /><br />
 
 Yong Sool Choi remained in Japan for 35 years training under Master Takeda. After
-Takeda's passin«, near the end of World War II, Yong Sool Choi returned to Korea and
+Takeda passin«, near the end of World War II, Yong Sool Choi returned to Korea and
 opened a small school in Taegu, the third largest city in Korea. Ile began training a small
 group of students informally. Yong Sool Choi is credited with the founding of modern
 day Ilapkido.
@@ -51,7 +51,7 @@ Hapkido Bo.xing for international Competitions. the Ilapkido Bo.xing (II BIO) sy
 focus on tnore Modern Fighting art forjns (YUDO) that Developed by Senior Masters Of
 II BIO. Ilapkido Boxing is a Ilybrid martial art originated from asian traditional martial
 art and Korean Traditional martial art Although Hapkido Boxin€r and Hapkido are
-closely related, they are two very different sports. "I'he tnain difference is that in Ilapkido
+closely related, they are two very different sports. Ihe tnain difference is that in Ilapkido
 Boxing Use Boxing Ring for competitions. its Sparring Principles Are very Different. we
 would definitely say that Ilapkido has a more aesthetic, fast-paced, and flashy art aspect
 to it SS hereas Ilapkido Boxing is tnore about the art of how the hurnan body could

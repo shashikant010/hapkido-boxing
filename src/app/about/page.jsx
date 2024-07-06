@@ -11,7 +11,7 @@ function page() {
             around the world. It is one of the largest and well- disciplined organization in the world. Hapkido
             Boxing International Organization was formed in early 2008.is the only Ilapkido Boxing
             oroanization recognized, The Ilapkido Boxing International organization is an
-            international organization of Ilapkido Boxing. II BIO's rules are based on dernocratic
+            international organization of Ilapkido Boxing. HBIOs rules are based on dernocratic
             principles and are forming the Governing body of the sport that is officially registered in
             Hong kong. H BIO is created to develop support and governin«v at an amateur level in
             addition to holding world championship events, IIBIO Sanctions the Championship of
