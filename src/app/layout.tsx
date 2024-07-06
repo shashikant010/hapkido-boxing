@@ -5,6 +5,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "../components/Footer"
 import {NextUIProvider} from '@nextui-org/react'
 import {ThemeProvider as NextThemesProvider} from "next-themes";
+import { useTheme } from "next-themes";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
