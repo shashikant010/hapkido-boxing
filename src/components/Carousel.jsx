@@ -10,8 +10,6 @@ export const Carousel = ({ data }) => {
   const [autoplay,setAutoplay]=useState("false")
 
   const nextSlide = () => {
-    console.log("next");
-    console.log(slide)
     setSlide(slide === data.length - 1 ? 0 : slide + 1);
   };
 

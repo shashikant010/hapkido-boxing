@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import { useTheme } from 'next-themes'
 
 function LatestEvent() {
   const eventphotos=[
@@ -10,8 +11,11 @@ function LatestEvent() {
   "/events/event5.png",
   "/events/event6.png",
 ]
+
   return (
+    
     <>
+    
     <div className='flex flex-col justify-center items-center text-center'>
       <h1 className='font-extrabold text-3xl font-serif p-3'>Latest event</h1>
       <div className='grid md:grid-cols-4 grid-cols-2 gap-3 group m-2'>

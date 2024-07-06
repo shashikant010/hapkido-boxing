@@ -8,6 +8,10 @@ import LatestEvent from "../components/LatestEvent"
 import Contact from "../components/Contact"
 import NewsAndResults from "../components/NewsAndResults"
 import MemberSlider from "../components/MemberSlider"
+import {NextUIProvider} from '@nextui-org/react'
+import {ThemeProvider as NextThemesProvider} from "next-themes";
+import { useState } from "react";
+import {useTheme} from "next-themes";
 
 export default function Home() {
  
@@ -46,13 +50,18 @@ export default function Home() {
     },
     
   ]
+
+ 
+
   return (
+   
     <span className="flex flex-col gap-5 justify-center items-center ">
       <Carousel data={slides} />
       <LatestEvent/>
-      <Contact/>
+      <Contact />
       <NewsAndResults/>
       <MemberSlider/>
     </span>
+
   );
 }
