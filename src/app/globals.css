@@ -12,13 +12,22 @@
   .mobile-nav {
       @apply dark:bg-gray-800 bg-white
   }
+
+  input::placeholder{
+    @apply dark:text-white text-black
+  }
 }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
     /* overflow-x: hidden; */
+}
+
+*:focus{
+  outline-color: transparent;
 }
 
 html,body{

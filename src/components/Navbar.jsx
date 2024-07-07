@@ -1,5 +1,5 @@
 "use client"
-import React from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
 import logo from '../components/circle-logo.png'
 import Link from 'next/link'
@@ -8,11 +8,25 @@ import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle"
 import PhoneNav from './PhoneNav'
 const Navbar = () => {
+  const logoref = useRef();
+  const logoBackgroundRef = useRef();
   const [menuOpen,setMenuOpen]=useState(false)
+  // hover:relative md:hover:scale-[3] hover:scale-[6] hover:top-[40vh] hover:left-[40vw] z-50 transition-all ease-in-out
+  function growLogo(){
+    console.log(logoref)
+    logoref.current.className+="relative md:scale-[3] scale-[7] top-[40vh] left-[45vw] z-50 transition-all ease-in-out"
+    logoBackgroundRef.current.className="absolute h-[100vh] w-screen bg-black bg-opacity-50 z-40 top-0 left-0 flex justify-end md:px-[30vw] px-[10vw] md:py-[20vh] py-[10vh] "
+  }
+
+  function hideLogo(){
+    logoref.current.className="md:ml-20 size-12 md:size-28 "
+    logoBackgroundRef.current.className="absolute h-[100vh] w-screen bg-black bg-opacity-50 z-40 top-0 left-0 justify-end md:px-[30vw] p-[10vw] py-[20vh] hidden"
+  }
   return (
     <>
     <div className='navbar h-auto w-full  gap-0 flex justify-between items-center pt-1 pb-1'>
-      <Image src={logo} alt='logo' className='md:ml-20 size-12 md:size-28'/>
+      <div className='absolute h-[100vh] w-screen bg-black bg-opacity-50 z-40 top-0 left-0 justify-end md:px-[30vw] px-[10vw] md:py-[20vh] hidden' ref={logoBackgroundRef}><span className='text-5xl text-white cursor-pointer ' onClick={hideLogo}>X</span></div>
+      <Image src={logo} alt='logo' className='md:ml-20 size-12 md:size-28 ' ref={logoref} onClick={growLogo}/>
       <div className='text-center'>
         <strong className='md:text-3xl text-[10px] w-full'>HAPKIDO BOXING NATIONAL FEDERATION HARYANA</strong><br/>
         <p className='font-bold text-[8px] md:text-xs'>Affiliated - Hapkido boxing asia association </p>

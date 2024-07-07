@@ -47,9 +47,9 @@ function Page() {
         
             <div className='flex justify-center items-center flex-col gap-8 m-4 border border-black p-10 bg-gray-200  rounded-2xl contact-section'>
             <h1 className='text-2xl font-bold font-mono'>GET IN TOUCH</h1>
-            <input type="text" placeholder='Enter your name' value={name} onChange={(e)=>{setName(e.target.value)}}/>
-            <input type="email" placeholder='Enter your Email' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
-            <input type="text" name="" id="" placeholder='Enter your message ' value={message} onChange={(e)=>{setMessage(e.target.value)}}/>
+            <input type="text" placeholder='Enter your name' value={name} onChange={(e)=>{setName(e.target.value)}} className='text-black bg-transparent border-t-0 border-l-0 border-r-0 border-b-black focus:outline-none'/>
+            <input type="email" placeholder='Enter your Email' value={email} onChange={(e)=>{setEmail(e.target.value)}} className='text-black bg-transparent  border-t-0 border-l-0 border-r-0 border-b-black focus:outline-none'/>
+            <input type="text" name="" id="" placeholder='Enter your message ' value={message} onChange={(e)=>{setMessage(e.target.value)}} className='text-black bg-transparent border-t-0 border-l-0 border-r-0 border-b-black focus:outline-none'/>
               <button className='bg-purple-300 px-7  py-3 font-bold rounded text-black' onClick={sendEmail}>Submit</button>
                 </div>
                 <div className='grid md:grid-cols-1 '>
