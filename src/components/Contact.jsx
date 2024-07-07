@@ -1,5 +1,6 @@
 import React from 'react'
 import background from "../../public/bg1.png"
+import Link from 'next/link'
 function Contact() {
   return (
     <div className='p-2 w-full'>
@@ -13,9 +14,12 @@ function Contact() {
         </svg>
 
   
+  <Link href="/contact">
   <div className="ctext m-5 font-medium ">
     contact us
   </div>
+  </Link>
+  
 
 </button>
       </div>

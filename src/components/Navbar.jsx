@@ -7,11 +7,14 @@ import {useTheme} from "next-themes";
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle"
 import PhoneNav from './PhoneNav'
+import { usePathname } from 'next/navigation'
 const Navbar = () => {
+  
   const logoref = useRef();
   const logoBackgroundRef = useRef();
   const [menuOpen,setMenuOpen]=useState(false)
-  // hover:relative md:hover:scale-[3] hover:scale-[6] hover:top-[40vh] hover:left-[40vw] z-50 transition-all ease-in-out
+
+  const pathname=usePathname()
   function growLogo(){
     console.log(logoref)
     logoref.current.className+="relative md:scale-[3] scale-[7] top-[40vh] left-[45vw] z-50 transition-all ease-in-out"
@@ -71,21 +74,23 @@ const Navbar = () => {
 
     <div className='h-12 w-full  md:flex justify-center items-center hidden'>
 
-      <ul className='md:flex gap-5 text-xl '>
+      <ul className='md:flex gap-5 text-xl ' onClick={()=>{
+        console.log(pathname)
+      }}>
         <Link href="/">
-          <li>Home</li>
+          <li className={pathname == "/" ? "active" : ""}>Home</li>
         </Link>
-        <Link href="/about"><li>About</li></Link>
-        <Link href="/member"><li>Member</li></Link>
-        <Link href="/commission"><li>Commission</li></Link>
-        <Link href="/history"><li>History</li></Link>
-        <Link href="/news"><li>News</li></Link>
-        <Link href="/events"><li>Events</li></Link>
-        <Link href="/refrees"><li>Refree list</li></Link>
-        <Link href="/result"><li>Result</li></Link>
-        <Link href="/rules"><li>Rules</li></Link>
-        <Link href="/gallery"><li>Gallery</li></Link>
-        <Link href="/contact"><li>Contact</li></Link>
+        <Link href="/about"><li className={pathname == "/about" ? "active" : ""}>About</li></Link>
+        <Link href="/member"><li className={pathname == "/member" ? "active" : ""}>Member</li></Link>
+        <Link href="/commission"><li className={pathname == "/commission" ? "active" : ""}>Commission</li></Link>
+        <Link href="/history"><li className={pathname == "/history" ? "active" : ""}>History</li></Link>
+        <Link href="/news"><li className={pathname == "/news" ? "active" : ""}>News</li></Link>
+        <Link href="/events"><li className={pathname == "/events" ? "active" : ""}>Events</li></Link>
+        <Link href="/refrees"><li className={pathname == "/refrees" ? "active" : ""}>Refree list</li></Link>
+        <Link href="/result"><li className={pathname == "/result" ? "active" : ""}>Result</li></Link>
+        <Link href="/rules"><li className={pathname == "/rules" ? "active" : ""}>Rules</li></Link>
+        <Link href="/gallery"><li className={pathname == "/gallery" ? "active" : ""}>Gallery</li></Link>
+        <Link href="/contact"><li className={pathname == "/contact" ? "active" : ""}>Contact</li></Link>
         <li><ThemeToggle/></li>
       </ul>
 
