@@ -376,6 +376,7 @@ footer {
     top: var(--pos-y-bar-one);
     transform: rotate(var(--rotate-bar-one));
     transition: top 200ms 100ms, transform 100ms;
+    
   }
   
   .bar--2 {

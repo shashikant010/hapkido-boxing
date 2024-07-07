@@ -60,12 +60,12 @@ export const Carousel = ({ data }) => {
 
           @media screen and (max-width: 701px) {
         .carousel{
-            width: 300px;
+            width: 90vw;
             height:300px;
             margin-top:20px
             }
         .slide{
-          left:-${slide*300}px;
+          left:-${slide*90}vw;
           }
         }
         
@@ -99,10 +99,16 @@ export const Carousel = ({ data }) => {
           .indicators {
             display: flex;
             position: absolute;
-            left:300px;
+            left:253px;
             bottom: 1rem;
             
           }
+
+          @media screen and (max-width: 701px) {
+        .indicators{
+        left:30vw;
+        }
+        }
         
           .indicator {
             background-color: white;
