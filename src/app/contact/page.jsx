@@ -2,6 +2,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { Textarea } from '@nextui-org/react';
+import Link from 'next/link';
 
 function Page() {
     const [name,setName]=useState("")
@@ -41,19 +42,21 @@ function Page() {
   
 
   return (
-    <div className='h-full flex justify-center bg-[url("/contact.png")] bg-contain '>
-      <div className="left flex justify-center items-center flex-col">
+    <div className='h-full flex justify-center bg-[url("/contact.png")] bg-contain contact-background'>
+      <div className="left flex justify-center items-center flex-col ">
         
-            <div className='flex justify-center items-center flex-col gap-8 m-4 border border-black p-10 bg-gray-200  rounded-2xl'>
-            <h1 className='text-2xl font-bold text-pink-800'>GET IN TOUCH</h1>
+            <div className='flex justify-center items-center flex-col gap-8 m-4 border border-black p-10 bg-gray-200  rounded-2xl contact-section'>
+            <h1 className='text-2xl font-bold font-mono'>GET IN TOUCH</h1>
             <input type="text" placeholder='Enter your name' value={name} onChange={(e)=>{setName(e.target.value)}}/>
             <input type="email" placeholder='Enter your Email' value={email} onChange={(e)=>{setEmail(e.target.value)}} />
             <input type="text" name="" id="" placeholder='Enter your message ' value={message} onChange={(e)=>{setMessage(e.target.value)}}/>
               <button className='bg-purple-300 px-7  py-3 font-bold rounded text-black' onClick={sendEmail}>Submit</button>
                 </div>
                 <div className='grid md:grid-cols-1 '>
-            <h1 className='bg-red-400 p-4 rounded-full font-bold mx-6 my-4'>Email us Now On : Naveendahiya1995@gmail.com</h1>
-            <h1 className='bg-red-400 p-4 rounded-full font-bold mx-6 mb-7'>Call us Now On : 9050051475</h1>
+            <h1 className='extra-contacts p-4 rounded-full font-bold mx-6 my-4'>Email us Now On : Naveendahiya1995@gmail.com</h1>
+            <h1 className='extra-contacts p-4 rounded-full font-bold mx-6 mb-7'>Call us Now On : 9050051475</h1>
+            <Link href="https://maps.app.goo.gl/NpYKwD2MQBBSPXTS9" target='blanck'><h1 className='extra-contacts p-4 rounded-full font-bold mx-6 mb-7 flex'>Vpo bhatgaon stadium sonipat haryana india <div className='flex justify-center items-center flex-col'><Image src="/map.svg" alt="map" width={100} height={100} className='h-8 w-8'/>
+            <p className='text-[8px]'>click to open in map</p></div></h1></Link>
         </div>
             
       </div>

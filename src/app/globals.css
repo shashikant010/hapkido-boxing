@@ -26,6 +26,22 @@ html,body{
 }
 
 
+.contact-background{
+  background-image: url("/contact.png");
+  /* background-repeat: no-repeat; */
+  background-position: center;
+  background-size: contain;
+  /* backdrop-filter: blur(55px); */
+
+}
+
+.contact-section,.extra-contacts{
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(70px);
+}
+
 
 li{
     cursor: pointer;
