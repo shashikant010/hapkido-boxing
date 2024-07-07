@@ -16,6 +16,9 @@
   input::placeholder{
     @apply dark:text-white text-black
   }
+  .active{
+    @apply dark:text-blue-300 text-blue-800
+  }
 }
 
 *{
