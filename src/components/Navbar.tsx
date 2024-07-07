@@ -4,7 +4,6 @@ import Image from 'next/image'
 import logo from '../components/circle-logo.png'
 import Link from 'next/link'
 import {useTheme} from "next-themes";
-import logo2 from "../../public/logo2.png"
 import { useEffect, useState } from "react";
 import ThemeToggle from "./ThemeToggle"
 import PhoneNav from './PhoneNav'
@@ -13,7 +12,7 @@ const Navbar = () => {
   return (
     <>
     <div className='navbar h-auto w-full  gap-0 flex justify-between items-center pt-1 pb-1'>
-      <Image src={logo2} alt='logo' className='md:ml-20 size-12 md:size-28'/>
+      <Image src={logo} alt='logo' className='md:ml-20 size-12 md:size-28'/>
       <div className='text-center'>
         <strong className='md:text-3xl text-[10px] w-full'>HAPKIDO BOXING NATIONAL FEDERATION HARYANA</strong><br/>
         <p className='font-bold text-[8px] md:text-xs'>Affiliated - Hapkido boxing asia association </p>
