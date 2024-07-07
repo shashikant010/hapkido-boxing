@@ -8,6 +8,12 @@
     }
 }
 
+@layer base{
+  .mobile-nav {
+      @apply dark:bg-gray-800 bg-white
+  }
+}
+
 *{
     margin: 0;
     padding: 0;
